@@ -10,7 +10,11 @@ class Transfer
   end 
   
   def valid?(account)
-    account.valid?
+    if account.valid?
+      true 
+    else 
+      false 
+    end 
   end 
   
   
