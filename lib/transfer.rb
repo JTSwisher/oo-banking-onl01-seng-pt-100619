@@ -7,4 +7,9 @@ class Transfer
     @status = "pending"
     @amount = 0
   end 
+  
+  
+  
+  
+  
 end 
