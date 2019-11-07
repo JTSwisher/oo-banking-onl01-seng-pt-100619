@@ -10,11 +10,7 @@ class Transfer
   end 
   
   def valid?
-    if BankAccount.self.valid?
-      true 
-    else 
-      false 
-    end 
+  
   end 
   
   
