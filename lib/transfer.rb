@@ -9,8 +9,8 @@ class Transfer
     @amount = amount
   end 
   
-  def valid?(account)
-    if account.valid?
+  def valid?
+    if self.valid?
       true 
     else 
       false 
