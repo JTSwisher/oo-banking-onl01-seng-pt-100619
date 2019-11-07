@@ -30,6 +30,7 @@ class Transfer
       trasnfer.status = "reversed"
     else 
       transfer_rejected
+    end 
   end 
   
   def transfer_rejected
