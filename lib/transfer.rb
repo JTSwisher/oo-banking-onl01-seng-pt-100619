@@ -13,8 +13,13 @@ class Transfer
     sender.valid? && receiver.valid?
   end 
   
-  def execute_transaction
-    
+    def execute_transaction 
+    if valid? && sender.balance > amount && self.status == pending
+      sender.balance -= amount
+      receiver.balance += amount 
+    else 
+      transfer_rejected
+    end  
   end 
   
   def transfer_rejected
