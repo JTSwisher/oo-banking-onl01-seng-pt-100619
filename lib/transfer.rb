@@ -23,6 +23,10 @@ class Transfer
     end  
   end 
   
+  def reverse_transfer
+    
+  end 
+  
   def transfer_rejected
       self.status = "rejected"
       "Transaction rejected. Please check your account balance."
